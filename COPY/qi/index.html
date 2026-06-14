@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Organizing User Search Histories</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script language="JavaScript">
+function valid()
+{
+var a = document.f.scat.value;
+var b = document.f.tit.value;
+
+if(document.f.scat.selectedIndex==0)
+{ alert("Please select type of finance");
+document.f.scat.focus();
+return false;
+}
+if(b=="")
+{
+alert("Enter Query Here");
+document.f.tit.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="logo">Organizing User Search Histories
+</div>
+<div id="nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="register.jsp">Register</a></li>
+<li><a href="userlogin.jsp">User Login</a></li>
+<li><a href="admin.jsp">Admin Login</a></li>
+</ul>
+</div>
+</div>
+<div id="r1"><div id="r2"><div id="r3"><div id="r4"><div id="r5"><div id="r6"><div id="r7"><div id="r8"><div id="r9">
+<div id="bar">
+</div>
+<div id="content">
+<div id="leftcolumn">
+<table align="center" width="90%">
+<tr>
+<td>
+<table align="left" width="500">
+<tr align="left" >
+<td colspan="2" class="paragraping" style="border:1px solid #ddd;">
+<form name="f" method="get" action="check.jsp" onsubmit="return valid();">
+<font size="+2">Enter Query:</font>&nbsp;&nbsp;&nbsp;<a href="userhistory.jsp" class="paragraping"><font color="#0069D2" size="+1">View Recent History</font></a><br><br>&nbsp;&nbsp;<input type="text" name="cat" value="Finance" readonly="" style="width:100px;height:19px;font-family:verdana;color:red;font-size:12px;">
+&nbsp;&nbsp;&nbsp;&nbsp;<select name="scat" class="input">
+<option value="">--------------Select-------------</option>
+<option value="Financial Planning">Financial Planning</option>
+<option value="Financial Control">Financial Control</option>
+<option value="Corporate Finance">Corporate Finance</option>
+<option value="Financial Management">Financial Management</option>
+<option value="Financial Statement">Financial Statement</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="tit" value="" class="input" style="height:20px;"><br><br>
+<input type="submit" name="sub" value="Submit Query" id="button">&nbsp;&nbsp;<input type="reset" name="Clear" value="Reset" id="button">
+</form>
+</td>
+</tr>
+<tr>
+<td><br><br></td>
+</tr>
+<tr>
+<td valign="top" align="left">
+<img src="images/arc.JPG">
+</td>
+</tr>
+</table>
+<td valign="top" align="justify">
+<table align="left" width="300">
+<tr>
+<td style="font-size:12px;line-height:1.8em;text-align:justify;" valign="top">
+<b><font size="+1">Synopsis:</font></b><br><br>
+Users are increasingly pursuing complex task-oriented goals
+on the Web, such as making travel arrangements, managing finances
+or planning purchases. To this end, they usually break down the tasks
+into a few co-dependent steps and issue multiple queries around these
+steps repeatedly over long periods of time. To better support users in
+their long-term information quests on the Web, search engines keep
+track of their queries and clicks while searching online. In this paper, we
+study the problem of organizing a user’s historical queries into groups
+in a dynamic and automated fashion. Automatically identifying query
+groups is helpful for a number of different search engine components
+and applications, such as query suggestions, result ranking, query alterations,
+sessionization, and collaborative search. In our approach, we
+go beyond approaches that rely on textual similarity or time thresholds,
+and we propose a more robust approach that leverages search query
+logs. We experimentally study the performance of different techniques,
+and showcase their potential, especially when combined together.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div></div>
+<div id="footer" align="center"><strong>Organizing User Search Histories</strong> - <a href="http://www.ventech.in">www.ventech.in</a></div>
+</div>
+</div></div></div></div></div></div></div></div>
+</div>
+
+</body>
+</html>
